@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Frank_Ruhl";
+  src: url(Frank_Ruhl_Libre/FrankRuhlLibre-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Fira_Sans";
+  src: url(Fira_Sans/FiraSans-Regular.ttf);
+}
+
 html {
   --bg-grey: #ebebeb;
   --blue: #c7ddea;
@@ -16,13 +26,35 @@ body {
   background-color: var(--bg-grey);
 }
 
+h1 {
+  font-family: "Frank_Ruhl", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 64px;
+  line-height: 90%;
+  margin-bottom: 16px;
+}
+
+p {
+  font-family: "Fira_Sans", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+span {
+  color: white;
+}
+
 .content {
   width: 80%;
-  background-color: #28815c;
   margin: 0 auto;
 }
 
+.join-btn {
+  width: 180px;
+  padding: 20px 30px;
+  border-radius: 30px;
+  border: none;
+}
+
 .grid1 {
+  height: 960px;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
@@ -37,7 +69,26 @@ body {
 }
 
 .grid1 .item1 article {
+  width: 55%;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.grid1 .item1 article p {
   width: 60%;
+}
+
+.grid1 .item1 img {
+  position: absolute;
+  transform: translate(210px, 460px);
+  height: 500px;
+}
+
+.grid1 .item1 .join-btn {
+  margin-top: 10px;
+  margin-left: 174px;
 }
 
 .grid1 .item2 {
@@ -46,6 +97,14 @@ body {
   background-color: var(--orange);
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.grid1 .item2 h1 {
+  color: white;
+  margin-top: 12px;
 }
 
 .grid1 .item3 {
@@ -54,4 +113,12 @@ body {
   background-color: var(--yellow);
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.grid1 .item3 h1 {
+  color: white;
+  margin-top: 12px;
 }
