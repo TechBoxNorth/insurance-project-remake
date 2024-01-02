@@ -26,6 +26,19 @@ body {
   background-color: var(--bg-grey);
 }
 
+.content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.grid1 {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+
 h1 {
   font-family: "Frank_Ruhl", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 64px;
@@ -51,24 +64,12 @@ span {
   color: white;
 }
 
-.content {
-  width: 80%;
-  margin: 0 auto;
-}
-
 .join-btn {
   width: 180px;
   padding: 20px 30px;
   border-radius: 30px;
   border: none;
   box-shadow: 0 5px rgba(0, 0, 0, 0.15);
-}
-
-.grid1 {
-  height: 960px;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
 }
 
 .grid1 .item1 {
@@ -92,9 +93,6 @@ span {
 }
 
 .grid1 .item1 img {
-  position: absolute;
-  transform: translate(210px, 460px);
-  height: 500px;
 }
 
 .grid1 .item1 .join-btn {
